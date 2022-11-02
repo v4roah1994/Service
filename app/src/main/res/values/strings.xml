@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BuscadorPersonas</string>
+    <string name="gris">gris</string>
+    <string name="boton">gris</string>
+
+
 </resources>
