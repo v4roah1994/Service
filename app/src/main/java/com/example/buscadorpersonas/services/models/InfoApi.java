@@ -1,12 +1,23 @@
 package com.example.buscadorpersonas.services.models;
 
+import java.util.Date;
+
 public class InfoApi {
 
-    private String nombre;
-    private String apellido;
-    private String edad;
-    private String tidoDocumentos;
-    private String numeroDoc;
+    int id;
+    String nombre, email;
+    Date created_at, updated_at;
+
+    public String toString() {
+        return id + " - " + nombre + " - " + email;}
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNombre() {
         return nombre;
@@ -16,35 +27,27 @@ public class InfoApi {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getEmail() {
+        return email;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getEdad() {
-        return edad;
+    public Date getCreated_at() {
+        return created_at;
     }
 
-    public void setEdad(String edad) {
-        this.edad = edad;
+    public void setCreated_at(Date created_at) {
+        this.created_at = created_at;
     }
 
-    public String getTidoDocumentos() {
-        return tidoDocumentos;
+    public Date getUpdated_at() {
+        return updated_at;
     }
 
-    public void setTidoDocumentos(String tidoDocumentos) {
-        this.tidoDocumentos = tidoDocumentos;
-    }
-
-    public String getNumeroDoc() {
-        return numeroDoc;
-    }
-
-    public void setNumeroDoc(String numeroDoc) {
-        this.numeroDoc = numeroDoc;
+    public void setUpdated_at(Date updated_at) {
+        this.updated_at = updated_at;
     }
 }
