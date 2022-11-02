@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VistaUsuarioActivity"
+    tools:context=".ActualizarActivity"
     android:padding="10dp">
 
 
@@ -34,7 +34,7 @@
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/eTxtNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -50,7 +50,7 @@
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/eTxtApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -66,7 +66,7 @@
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/eTxtEdad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -82,7 +82,7 @@
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/eTtxtTipoDocumento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -98,7 +98,7 @@
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/eTxtDocumento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -106,7 +106,7 @@
             android:hint="Introduzca documento" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnActualizar"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -116,7 +116,7 @@
             />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnEliminar"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Eliminar"
@@ -125,7 +125,7 @@
             />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnAtrasA"
             android:layout_width="200dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"

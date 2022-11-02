@@ -2,9 +2,11 @@ package com.example.buscadorpersonas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.buscadorpersonas.services.InfoServices;
 import com.example.buscadorpersonas.services.dataResponse.InfoResponse;
@@ -15,18 +17,21 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText numeroDocumento;
-    Button buscar;
+    EditText  txtDocumento;
+    Button btnBuscar;
+    TextView txtMostar;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        numeroDocumento = findViewById(R.id.txtNumeroDoc);
-        buscar = findViewById(R.id.btnBuscar);
+        txtDocumento = findViewById(R.id.eTxtDocumentoB);
+        btnBuscar = findViewById(R.id.btnBuscar);
+        txtMostar = findViewById(R.id.txtVMostrar);
 
-        buscar.setOnClickListener(view -> {
+        btnBuscar.setOnClickListener(view -> {
 
             Consulta();
 
