@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreacionActivity"
+    tools:context=".VistaUsuarioActivity"
     android:padding="10dp">
 
 
@@ -16,17 +16,13 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="415dp"
+            android:layout_width="match_parent"
             android:layout_height="141dp"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
             android:background="@android:color/holo_blue_light"
-            android:padding="30dp"
-            android:text="Creacion"
+            android:text="Actualizacion"
             android:textAlignment="center"
-            android:textSize="60sp" />
+            android:gravity="center"
+            android:textSize="50sp" />
 
         <TextView
             android:id="@+id/textView5"
@@ -91,7 +87,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Introduzca tipo de documento"/>
+           android:hint="Introduzca tipo de documento"/>
 
         <TextView
             android:id="@+id/textView9"
@@ -114,7 +110,16 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Crear"
+            android:text="Actualizar"
+            android:layout_gravity="center"
+            android:backgroundTint="@android:color/holo_blue_light"
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
             android:layout_gravity="center"
             android:backgroundTint="@android:color/holo_blue_light"
             />

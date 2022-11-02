@@ -1,82 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    >
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="415dp"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
         android:layout_height="141dp"
-        android:layout_marginStart="175dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="178dp"
-        android:layout_marginBottom="657dp"
-        android:padding="30dp"
         android:background="@android:color/holo_blue_light"
-        android:text="C R U D"
-        android:textSize="60sp"
+        android:text="Actualizacion"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:textSize="50sp" />
 
     <EditText
-        android:id="@+id/txtNumeroDoc"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="536dp"
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Numero Documento"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_marginTop="20dp"
+        android:hint="Inserte el Documento" />
 
     <Button
-        android:id="@+id/btnBuscar"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="159dp"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:text="Buscar"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumeroDoc" />
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/boton"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="buscar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="393dp"
+        android:layout_height="206dp"
+        android:backgroundTint="@color/gris"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textSize="20dp"/>
+    </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btnBuscar2"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="159dp"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:text="Agregar"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumeroDoc" />
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/boton"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Actualizar" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="379dp"
-        android:background="@color/gris"
-        android:layout_height="255dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBuscar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/boton"
+        android:layout_gravity="center"
+        android:text="Crear" />
+
+</LinearLayout>
