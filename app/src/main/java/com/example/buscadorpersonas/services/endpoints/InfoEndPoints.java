@@ -1,6 +1,8 @@
 package com.example.buscadorpersonas.services.endpoints;
+import com.example.buscadorpersonas.services.models.*;
 
 import com.example.buscadorpersonas.services.dataResponse.InfoResponse;
+
 
 import retrofit2.Call;
 import retrofit2.http.Body;
