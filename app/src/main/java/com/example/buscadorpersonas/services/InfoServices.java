@@ -12,7 +12,7 @@ public class InfoServices {
 
     private Retrofit getRetrofit() {
         return new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:8080/")
+                .baseUrl("http://172.16.36.245:8080/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
