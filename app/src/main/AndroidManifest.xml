@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BuscadorPersonas" >
         <activity
-            android:name=".ActualizarActivity"
+            android:name=".VisualizarActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

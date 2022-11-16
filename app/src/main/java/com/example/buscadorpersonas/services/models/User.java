@@ -2,29 +2,30 @@ package com.example.buscadorpersonas.services.models;
 
 public class User {
 
-    String nombre;
-    String email;
+    String names;
+    String username;
 
-    public User(String names, String username, String password) {
-        this.nombre = names;
-        this.email = username;
+    public User(String names, String username, String password, String rol) {
+        this.names = names;
+        this.username = username;
         this.password = password;
+        this.rol = rol;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNames() {
+        return names;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNames(String names) {
+        this.names = names;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUsername() {
+        return username;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -35,5 +36,14 @@ public class User {
         this.password = password;
     }
 
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
     String password;
+    String rol;
 }

@@ -20,7 +20,7 @@
         android:textSize="50sp" />
 
     <EditText
-        android:id="@+id/eTxtDocumentoB"
+        android:id="@+id/TxtDocumento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -43,23 +43,14 @@
         android:backgroundTint="@color/gris"
         android:layout_marginTop="20dp">
 
-        <TextView
-            android:id="@+id/txtVMostrar"
+        <ListView
+            android:id="@+id/txtMostrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="TextView"
             android:textSize="20dp"/>
     </androidx.cardview.widget.CardView>
-
-    <Button
-        android:id="@+id/btnActualizar"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/boton"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Actualizar" />
 
     <Button
         android:id="@+id/btnCrear"

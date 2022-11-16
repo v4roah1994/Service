@@ -49,65 +49,49 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Apellido:"
+            android:text="Usuario:"
             android:textColor="@color/black"
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/eTxtApellidoC"
+            android:id="@+id/eTxtUsuarioC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Introduzca el apellido" />
+            android:hint="Introduzca el usuario" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edad:"
+            android:text="Rol:"
             android:textColor="@color/black"
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/eTxtEdadC"
+            android:id="@+id/eTxtRolC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Introduzca la edad" />
+            android:hint="Introduzca el rol" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tipo de Documento:"
+            android:text="Password:"
             android:textColor="@color/black"
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/eTtxtTipoDocumentoC"
+            android:id="@+id/eTxtPasswordC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Introduzca tipo de documento"/>
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Documento:"
-            android:textColor="@color/black"
-            android:textSize="20dp"/>
-
-        <EditText
-            android:id="@+id/eTxtDocumentoC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Introduzca documento" />
+            android:hint="Introduzca el password"/>
 
         <Button
             android:id="@+id/btnCrear"
@@ -128,5 +112,5 @@
             android:text="Atras" />
     </LinearLayout>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
