@@ -3,13 +3,20 @@ package com.example.buscadorpersonas.services.models;
 import java.util.Date;
 
 public class InfoApi {
-
     int id;
-    String nombre, email;
+    String names, username, rol;
     Date created_at, updated_at;
 
     public String toString() {
-        return id + " - " + nombre + " - " + email;}
+        return id + " - " + names + " - " + username + " - " + rol;
+    }
+
+    public InfoApi(int id, String names, String username, String rol) {
+        this.id = id;
+        this.names = names;
+        this.username = username;
+        this.rol = rol;
+    }
 
     public int getId() {
         return id;
@@ -19,20 +26,28 @@ public class InfoApi {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNames() {
+        return names;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNames(String names) {
+        this.names = names;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUsername() {
+        return username;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 
     public Date getCreated_at() {

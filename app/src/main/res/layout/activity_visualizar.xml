@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActualizarActivity"
+    tools:context=".VisualizarActivity"
     android:padding="10dp">
 
 
@@ -45,65 +45,33 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Apellido:"
+            android:text="Usuario:"
             android:textColor="@color/black"
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/eTxtApellido"
+            android:id="@+id/eTxtUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Introduzca el apellido" />
+            android:hint="Introduzca el usuario" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edad:"
+            android:text="Rol:"
             android:textColor="@color/black"
             android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/eTxtEdad"
+            android:id="@+id/eTxtRol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Introduzca la edad" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tipo de Documento:"
-            android:textColor="@color/black"
-            android:textSize="20dp"/>
-
-        <EditText
-            android:id="@+id/eTtxtTipoDocumento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-           android:hint="Introduzca tipo de documento"/>
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Documento:"
-            android:textColor="@color/black"
-            android:textSize="20dp"/>
-
-        <EditText
-            android:id="@+id/eTxtDocumento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Introduzca documento" />
+            android:hint="Introduzca Rol" />
 
         <Button
             android:id="@+id/btnActualizar"
