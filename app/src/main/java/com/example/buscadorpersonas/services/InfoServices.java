@@ -21,7 +21,6 @@ public class InfoServices {
         return this.getRetrofit().create(InfoEndPoints.class).getInfo();
     }
 
-
     public Call<InfoResponse> postInfoService(User user) {
         return this.getRetrofit().create(InfoEndPoints.class).postInfo(user);
     }
