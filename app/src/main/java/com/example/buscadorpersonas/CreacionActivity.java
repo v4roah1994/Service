@@ -59,7 +59,7 @@ public class CreacionActivity extends AppCompatActivity {
     }
 
     private void createUser(User u) {
-        //Hace la petición POST
+        //POST
         Call<InfoResponse> respInfo = (new InfoServices().postInfoService(u));
         respInfo.enqueue(new Callback<InfoResponse>() {
             @Override
