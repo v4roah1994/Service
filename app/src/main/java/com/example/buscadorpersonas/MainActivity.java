@@ -26,8 +26,8 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
 
     ListView listUsers;
-    EditText document;
-    Button addUser, search;
+    EditText txtDocument;
+    Button btnAdd, btnSearch;
 
     ArrayList<String> listUser;
     InfoApi user;
@@ -43,38 +43,38 @@ public class MainActivity extends AppCompatActivity {
 
 
         listUsers = findViewById(R.id.txtMostrar);
-        document = findViewById(R.id.TxtDocumento);
-        addUser = findViewById(R.id.btnCrear);
-        search = findViewById(R.id.btnBuscar);
+        txtDocument = findViewById(R.id.TxtDocumento);
+        btnAdd = findViewById(R.id.btnCrear);
+        btnSearch = findViewById(R.id.btnBuscar);
 
         context = this;
 
         loadUser(-1);
 
         //Botón buscar
-        search.setOnClickListener(v -> {
-            if (document.getText().toString().isEmpty()) {
+        btnSearch.setOnClickListener(v -> {
+            if (txtDocument.getText().toString().isEmpty()) {
                 loadUser(-1);
                 return;
             }
-            loadUser(Integer.parseInt(document.getText().toString()));
+            loadUser(Integer.parseInt(txtDocument.getText().toString()));
         });
 
         //Botón crear
-        addUser.setOnClickListener(v -> {
-            Intent intent = new Intent(this, CreacionActivity.class);
+        btnAdd.setOnClickListener(v -> {
+            Intent intent = new Intent(context, CreacionActivity.class);
             startActivity(intent);
         });
 
 
         listUsers.setOnItemClickListener((adapterView, view, i, l) -> {
 
-            String[] list = listUsers.getItemAtPosition(i).toString().split(" - ");
-            Intent intent = new Intent(this, VisualizarActivity.class);
-            intent.putExtra("Id", list[0]);
-            intent.putExtra("Name", list[1]);
-            intent.putExtra("User", list[2]);
-            intent.putExtra("Rol", list[3]);
+            String[] cadenas = listUsers.getItemAtPosition(i).toString().split(" - ");
+            Intent intent = new Intent(context, VisualizarActivity.class);
+            intent.putExtra("Id", cadenas[0]);
+            intent.putExtra("Name", cadenas[1]);
+            intent.putExtra("User", cadenas[2]);
+            intent.putExtra("paramsRol", cadenas[3]);
             startActivity(intent);
         });
 
@@ -125,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<InfoResponse> call, Throwable t) {
                 Log.i("Info", "Conexión denegada");
-                Log.i("Info", t.getCause().getMessage());
             }
         });
     }

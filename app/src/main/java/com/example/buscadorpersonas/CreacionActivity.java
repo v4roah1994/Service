@@ -65,7 +65,6 @@ public class CreacionActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<InfoResponse> call, Throwable t) {
                 Log.i("Info", "Conexión denegada");
-                Log.i("Info", t.getCause().getMessage());
             }
         });
     }
