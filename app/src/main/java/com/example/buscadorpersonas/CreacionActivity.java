@@ -36,42 +36,34 @@ public class CreacionActivity extends AppCompatActivity {
         Add = findViewById(R.id.btnCrear);
         Back = findViewById(R.id.btnAtrasC);
 
-
-
+        //boton agregar ususario
         Add.setOnClickListener(v -> {
-
             if (Name.getText().toString().isEmpty() || UserName.getText().toString().isEmpty()|| Password.getText().toString().isEmpty() || Rol.getText().toString().isEmpty()){
                 Toast.makeText(this, "Campos vacios", Toast.LENGTH_SHORT).show();
             }else {
-
+                //obtencion de datos
                 createUser(new User(Name.getText().toString(), UserName.getText().toString(),Password.getText().toString(), Rol.getText().toString()));
             }
         });
 
-
-
-
+        //boton atras
         Back.setOnClickListener(v -> {
-
             intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
     }
 
     private void createUser(User u) {
-        //POST
+        //peticion al POST
         Call<InfoResponse> respInfo = (new InfoServices().postInfoService(u));
         respInfo.enqueue(new Callback<InfoResponse>() {
             @Override
             public void onResponse(Call<InfoResponse> call, Response<InfoResponse> response) {
-
                 Log.i("Info", "Conexión satisfactoria");
                 Log.i("Info", "Usuario creado satisfactoriamente");
             }
-
             @Override
             public void onFailure(Call<InfoResponse> call, Throwable t) {
-
                 Log.i("Info", "Conexión denegada");
                 Log.i("Info", t.getCause().getMessage());
             }
